@@ -96,6 +96,12 @@
 | Parking | [ ] Yes  [ ] No  — Type: |
 | Storage/basement | [ ] Yes  [ ] No |
 
+### TITLE & LEGAL (verify with lawyer/agent)
+| Field | Value |
+|-------|-------|
+| Title status | [ ] Clear  [ ] Issues  [ ] Unknown |
+| Encumbrances/liens | [ ] None  [ ] Yes  [ ] Unknown |
+
 ### LONG-TERM POTENTIAL
 | Field | Value |
 |-------|-------|

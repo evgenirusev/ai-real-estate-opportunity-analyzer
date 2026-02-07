@@ -1,12 +1,12 @@
 # MASTER PROMPT — Investment Opportunity Assessment Engine
 
-> **Purpose:** This is the final synthesis prompt. It ingests ALL five prompt inputs and produces a scored, ranked investment assessment with actionable recommendations.
+> **Purpose:** This is the final synthesis prompt. It ingests ALL four prompt inputs and produces a scored, ranked investment assessment with actionable recommendations.
 
 ---
 
 ## Instructions
 
-Feed all 5 completed inputs into this prompt. You can assess a single property, multiple properties for comparison, or an entire portfolio allocation plan.
+Feed all 4 completed inputs into this prompt. You can assess a single property, multiple properties for comparison, or an entire portfolio allocation plan.
 
 ---
 
@@ -26,14 +26,13 @@ investor but understand the opportunities in emerging markets.
 ─────────────────────────────────────────────────────────────
 
 INPUTS PROVIDED:
-You will receive 5 structured data inputs for ONE OR MORE
+You will receive 4 structured data inputs for ONE OR MORE
 properties under evaluation:
 
   <prompt_input_1> — Property-Level Data </prompt_input_1>
   <prompt_input_2> — Location & Macro-Economic Data </prompt_input_2>
   <prompt_input_3> — Real Estate Market Dynamics </prompt_input_3>
   <prompt_input_4> — Financial & Deal Structure </prompt_input_4>
-  <prompt_input_5> — Legal, Tax & Regulatory Framework </prompt_input_5>
 
 ─────────────────────────────────────────────────────────────
 
@@ -72,7 +71,7 @@ Each dimension is scored 0-10. The weighted total = Composite Score.
 │ D4  │ Rental Demand & Income Stability  │ 15%    │ 15        │
 │ D5  │ Capital Appreciation Potential    │ 10%    │ 10        │
 │ D6  │ Risk Profile                      │ 10%    │ 10        │
-│ D7  │ Legal & Regulatory Safety         │  5%    │  5        │
+│ D7  │ Legal & Title Clarity             │  5%    │  5        │
 │ D8  │ Value-Add / Upside Opportunity    │  5%    │  5        │
 │ D9  │ Liquidity & Exit Feasibility      │  5%    │  5        │
 │ D10 │ Strategic Fit (Portfolio/Goal)     │  5%    │  5        │
@@ -134,25 +133,24 @@ D5 — CAPITAL APPRECIATION POTENTIAL (Weight: 10%)
   Inputs: Pricing Trends from Prompt Input 3, Infrastructure from Input 2
 
 D6 — RISK PROFILE (Weight: 10%) — NOTE: Higher score = LOWER risk
-  Score 9-10: Minimal risk — strong legal protections, stable market,
-              diversified economy, low vacancy, no environmental risk
+  Score 9-10: Minimal risk — stable market, diversified economy,
+              low vacancy, no environmental risk
   Score 7-8:  Low risk — minor concerns in 1-2 areas
   Score 5-6:  Moderate risk — notable concerns (e.g., single demand
               driver, older building, moderate vacancy)
-  Score 3-4:  High risk — multiple concerns (legal issues, structural
-              problems, market oversupply, regulatory uncertainty)
-  Score 0-2:  Very high risk — title issues, severe structural problems,
-              collapsing market, legal complications
-  Inputs: Cross-reference all inputs, emphasis on Inputs 1, 3, 5
+  Score 3-4:  High risk — multiple concerns (structural problems,
+              market oversupply, economic uncertainty)
+  Score 0-2:  Very high risk — severe structural problems,
+              collapsing market, major red flags
+  Inputs: Cross-reference all inputs, emphasis on Inputs 1, 3
 
-D7 — LEGAL & REGULATORY SAFETY (Weight: 5%)
-  Score 9-10: Clear title, no restrictions, favorable tax treatment,
-              strong property rights, straightforward process
-  Score 7-8:  Minor legal complexity, manageable tax burden
-  Score 5-6:  Some restrictions or complexity (e.g., company needed)
-  Score 3-4:  Significant legal hurdles or unfavorable tax treatment
-  Score 0-2:  Title issues, legal disputes, punitive taxation
-  Inputs: All of Prompt Input 5
+D7 — LEGAL & TITLE CLARITY (Weight: 5%)
+  Score 9-10: Clear title, no encumbrances, all permits valid
+  Score 7-8:  Minor issues, easily resolved
+  Score 5-6:  Some complexity requiring lawyer review
+  Score 3-4:  Significant issues or unclear ownership history
+  Score 0-2:  Title disputes, liens, or legal red flags
+  Inputs: Legal section from Prompt Input 1
 
 D8 — VALUE-ADD / UPSIDE OPPORTUNITY (Weight: 5%)
   Score 9-10: Clear forced appreciation opportunity (renovation ROI > 200%),
